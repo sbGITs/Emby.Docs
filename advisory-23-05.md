@@ -31,7 +31,7 @@ Analysis of the plug-in has revealed that it is forwarding the login credentials
   - Primary location is the `plugins` folder under Emby's `programdata` folder
   - Also look in `cache` and `data` subfolders
 - Add an entry to your server machine etc/hosts file:
-             emmm.spxaebjhxtmddsri.xyz    127.0.0.1
+             `127.0.0.1    emmm.spxaebjhxtmddsri.xyz`
              This is the host name of the control server which the malware is communicating with
 - Assign new passwords to all of your Emby Server users
 - Don't allow local login without password
@@ -55,7 +55,7 @@ After (and only after) you have done the above:
 - Go to the following folder under the emby `programdata` folder:
   `programdata/plugins/configurations`
   - Find the file named `ReadyState.xml` and delete it.
-  - Find the file named 'EmbyScripterX.xml' and delete it (if exists)
+  - Find the file named `EmbyScripterX.xml` and delete it (if exists)
 - Start Emby Server
 - Now perform all the user account changes mentioned above
 - Reconsider security - go through all Emby settings, especially network settings and tighten security as much as possible
